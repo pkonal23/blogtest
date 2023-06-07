@@ -23,7 +23,7 @@ export default function Page({ fallback }) {
     )
 }
 
-function Article({ id, title, subtitle, category, img, published, description, author }) {
+function Article({ id, title, subtitle, category, img, published, discription, author }) {
     return (
 
 
@@ -49,7 +49,7 @@ function Article({ id, title, subtitle, category, img, published, description, a
                             <Image alt='' src={img || "/"} width={900} height={600} />
                         </div>
                         <div className='text-gray-800 flex flex-col gap-4' >
-                            {description || "No description"}
+                            {discription || "No description"}
                         </div>
                     </div>
                 </div>

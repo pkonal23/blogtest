@@ -46,7 +46,7 @@ function Post({ data }) {
             <div className="image flex flex-col justufy-start">
                 <Link href="/" legacyBehavior>
                     <a>
-                        <Image src={`/posts/${id}`} className="rounded" width={300} height={250} />
+                        <Image src={img|| "/"} className="rounded" width={300} height={250} />
                     </a>
                 </Link>
             </div>

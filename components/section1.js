@@ -58,7 +58,7 @@ export default function Section1() {
 
 function Slide({data}) {
 
-    const {id,title, category,img,published,description,author} = data;
+    const {id,title, category,img,published,discription,author} = data;
     return (
         <div className="grid md:grid-cols-2 gap-20">
             <div className="image">
@@ -77,7 +77,7 @@ function Slide({data}) {
                     <Link href={`/posts/${id}`}> <a className='text-3xl md:text-6xl font-bold hover:text-black-900' >{title|| "UnknownTitle"}</a> </Link>
                 </div>
                 <p className='py-3' >
-                {description|| "UnknownDes."}
+                {discription|| "UnknownDes."}
                 </p>
                 {
                    author?<Author {...author} ></Author>:<></>

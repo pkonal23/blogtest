@@ -51,7 +51,7 @@ export default function section3() {
 }
 
 function Post({data}) {
-    const {id,title, category,img,published,description,author} = data;
+    const {id,title, category,img,published,discription,author} = data;
     return (
         <div className="grid">
             <div className="images" >
@@ -73,7 +73,7 @@ function Post({data}) {
                 </div>
 
                 <p className='pr-16'>
-                {description|| "Unknowndes"}
+                {discription|| "Unknowndes"}
                 </p>
                 {
                                       author?<Author {...author} ></Author>:<></>
